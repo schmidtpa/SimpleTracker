@@ -32,7 +32,7 @@ if __name__ == '__main__':
 	gpsd = GpsdPoller()
 	
 	date = datetime.datetime.utcnow()
-	filePath = "/opt/simpletracker/log/" + date.strftime("%Y%m%d_%H%M%S") + "_gps.log"
+	filePath = "/opt/simpletracker/log/" + date.strftime("%Y%m%d") + "_gps.log"
 	
 	try:
 		gpsd.start()
