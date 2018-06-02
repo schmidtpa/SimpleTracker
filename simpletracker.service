@@ -1,0 +1,12 @@
+[Unit]
+Description=SimpleTracker
+After=multi-user.target
+
+[Service]
+Type=idle
+Restart=always
+RestartSec=5
+ExecStart=/usr/bin/python /opt/simpletracker/simpletracker.py
+
+[Install]
+WantedBy=multi-user.target
